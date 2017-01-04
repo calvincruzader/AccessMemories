@@ -44,7 +44,7 @@ gulp.task('scripts', function() {
       .pipe(ngAnnotate())
       .pipe(sourcemaps.write('./'))
 
-      .pipe(gulp.dest('./grails-app/assets/javascripts/accessmemory'));
+      .pipe(gulp.dest('./grails-app/assets/javascripts/accessmemories'));
   }
   bundler.on('update', rebundle);
 
