@@ -13,9 +13,9 @@ var _angularUiRouter = require('angular-ui-router');
 
 var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 
-var _cardsModule = require('./submodules/accessmemories/cardsModule.js');
+var _accessMemoriesModule = require('./submodules/accessmemories/accessMemoriesModule.js');
 
-var _cardsModule2 = _interopRequireDefault(_cardsModule);
+var _accessMemoriesModule2 = _interopRequireDefault(_accessMemoriesModule);
 
 var _routerConfig = require('./routerConfig.js');
 
@@ -23,11 +23,11 @@ var _routerConfig2 = _interopRequireDefault(_routerConfig);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var accessMemoriesApp = _angular2.default.module('accessMemoriesApp', [_cardsModule2.default, _angularUiRouter2.default]).config(_routerConfig2.default);
+var AccessMemoryApp = _angular2.default.module('accessMemoriesApp', [_accessMemoriesModule2.default, _angularUiRouter2.default]).config(_routerConfig2.default);
 
-exports.default = accessMemoriesApp.name;
+exports.default = AccessMemoryApp.name;
 
-},{"./routerConfig.js":2,"./submodules/accessmemories/cardsModule.js":3,"angular":6,"angular-ui-router":4}],2:[function(require,module,exports){
+},{"./routerConfig.js":2,"./submodules/accessmemories/accessMemoriesModule.js":3,"angular":6,"angular-ui-router":4}],2:[function(require,module,exports){
 'use strict';
 
 routesConfig.$inject = ["$stateProvider", "$urlRouterProvider"];
@@ -63,9 +63,9 @@ var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var cardsModule = _angular2.default.module('cardsModule', [_angularUiRouter2.default]);
+var accessMemoriesModule = _angular2.default.module('accessMemoriesModule', [_angularUiRouter2.default]);
 
-exports.default = cardsModule;
+exports.default = accessMemoriesModule;
 
 },{"angular":6,"angular-ui-router":4}],4:[function(require,module,exports){
 /**

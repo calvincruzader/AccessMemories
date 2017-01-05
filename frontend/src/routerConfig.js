@@ -1,5 +1,5 @@
 
-function routerConfig($stateProvider, $urlRouterProvider) {
+function routesConfig($stateProvider, $urlRouterProvider) {
   'ngInject';
 
   $stateProvider
@@ -9,4 +9,4 @@ function routerConfig($stateProvider, $urlRouterProvider) {
     });
 }
 
-export default routerConfig;
+export default routesConfig;
